@@ -36,7 +36,7 @@ print(image2.size)
 im = np.array(image.convert('L'))  # you can pass multiple arguments in single line
 print(type(im))
 
-gr_im = Image.fromarray(im).resize((50, 50)).save('gr_max.png')
+gr_im = Image.fromarray(im).resize((50, 50)).save('bitmap/gr_max.png')
 print(np.mean(im))
 bl_im = im <= np.mean(im)
 print(bl_im)
